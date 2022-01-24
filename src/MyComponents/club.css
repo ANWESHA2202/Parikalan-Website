@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Open+Sans&family=Oswald:wght@200&family=Rubik:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+
+*{
+    padding : 0;
+    margin: 0;
+    color: black;
+    /* overflow: hidden; */
+    
+}
+
+
+/* Main container */
+
+
+.intro{
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 130%;
+    margin: 20px;
+    padding: 0 10px;
+}
+
+.gif{
+    scrollbar-width: hidden;
+     /* border-radius: 100px;  */
+    height: 400px;
+    width: 400px;
+}
+
+.box1{
+    display: inline-flex;  
+ margin-top: 100px;
+}
+
+.AnimeHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.AnimeHeading h1 {
+    text-align: center;
+    font-size: 65px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    color:rgb(17, 103, 114);
+    -webkit-text-stroke: 0.2vw rgb(79, 140, 145);
+}
+.AnimeHeading h1::before
+{
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    height: 100%;
+    color: rgb(14, 5, 5);
+    -webkit-text-stroke: 0vw rgb(79, 140, 145);
+    border-right: 3px solid black;
+    overflow: hidden;
+    animation: animate 6s linear infinite   ;
+
+}
+@keyframes animate{
+    0%,10%,100% {
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 750px){
+
+    .member{
+        margin-top: 550px;
+    }
+     .box1{
+      display: block;
+     }
+     .gif{   
+         display: block;
+         margin: auto;
+ 
+     }
+     .intro-text{
+         display: block;
+         margin: auto;
+         width: 100%;
+ 
+     }
+
+ }
+ @media only screen and (max-width: 850px){
+     .member{
+         margin-top: 300px;
+     }
+     .gif{
+         margin-top: 24px;
+     }
+     .box1{
+         flex-wrap: wrap-reverse;
+     }
+     
+ }
+ @media  only screen and (max-width: 850px) and (min-width: 650px){
+     /* .core_team{
+         margin-top: 95vh;
+     } */
+     .gif{
+         position: relative;
+         top: 100px;
+     }
+     /* .student{
+         margin-top: 200px;
+     } */
+ }
+
+/* Utility classes */
+
+
+.center{
+    text-align: center;
+}
+
+.intro-text{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    font-weight: bold;
+    font-size: 44px;
+    margin: 13px;
+    font-family: 'Open Sans', sans-ser ;
+}
+.superheader{
+    font-weight: bolder;
+    font-size: 350%;
+    margin: 0.5em;
+    margin: 58px 0px 35px;
+    font-family:'Open Sans', sans-ser;
+}
+
+.normie-text{
+    font-size: 130%;
+    margin: 10px;
+    padding: 0 60px;
+    font-family: 'Moon Dance', cursive;
+}
+ 

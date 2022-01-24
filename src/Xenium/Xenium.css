@@ -1,0 +1,331 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.Xenium {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(27, 28, 29, 0.63), rgba(26, 27, 26, 0.603));
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+#fest {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fest-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.fest-name h1 {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    font-size: 10vw;
+    color: transparent;
+    text-shadow: 0px 0px 8px #26c97d;
+    -webkit-text-stroke: 0.1vw white;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.fest-name h1::before {
+    content: attr(data);
+    position: absolute;
+    height: 100%;
+    color: black;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+
+.fest-info {
+    /* background-color: grey; */
+    margin: 0 auto;
+    width: 98%;
+}
+
+.fest-short-info {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.fest-description {
+    width: 70%;
+    margin: 10px auto;
+    font-style: italic;
+    font-size: 16px;
+    text-align: justify;
+    color: #fff;
+}
+
+.fest-posters {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fest-image {
+    width: 75%;
+    max-width: 500px;
+    min-width: 300px;
+    max-height: 300px;
+    margin: 10px 14px;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 3px 5px grey;
+    border-radius: 15px;
+}
+
+
+/* .container2{
+    margin-top: 100px;
+    display:flex;
+    flex-direction: row;
+} */
+
+#cards {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    color: rgb(187, 183, 171);
+}
+
+.glass-card {
+    font-size: 18px;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    background: radial-gradient(at 50% 50%, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.5));
+    box-shadow: 0px 0px 2px 2px grey;
+    transition: .25s ease-in;
+    margin: 20px 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+
+.glass-card:hover {
+    transform: scale(1.03);
+    /* height: 400px; */
+    box-shadow: 0px 0px 4px 4px white;
+}
+
+.glass-card h2 {
+    transition: 0.5s;
+    position: absolute;
+}
+
+.glass-card:hover h2 {
+    transform: translateY(-140px);
+    text-shadow: 2px 2px 8px #000000;
+    transition: all .5s;
+    color: white;
+}
+
+.cards-info {
+    z-index: 10;
+    font-size: 16px;
+    color: #000000;
+    font-style: italic;
+    padding: 20px;
+    margin-top: auto;
+    padding-bottom: 25px;
+    visibility: hidden;
+    text-align: justify;
+}
+
+.cards-button button {
+    background-color: rgba(17, 17, 17, 0.9);
+    color: white;
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+    /* font-weight: 500; */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    transition: .25s;
+    box-shadow: 0px 0px 5px 3px rgba(17, 17, 17, 0.6);
+    visibility: hidden;
+}
+
+.cards-button button:hover {
+    background-color: rgba(17, 17, 17, 0.8);
+    transition: .25s;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 5px 3px grey;
+}
+
+.glass-card:hover button,
+.glass-card:hover .cards-info {
+    animation-name: card-hover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes card-hover {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        color: white;
+        opacity: 1;
+    }
+}
+
+.cards-button a {
+    color: white;
+    text-decoration: none;
+}
+
+#events {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    outline: none;
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px grey;
+    transition: 1s ease-in-out;
+}
+
+.all-events-name {
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.event-name {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+    width: 24%;
+    text-align: center;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-shadow: 0px 0px 1px black;
+}
+
+.event-name:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.event-description {
+    /* div-div */
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3em;
+}
+
+.event-short-description {
+    /* h2-p */
+    padding: 10px;
+}
+
+.event-short-description h2 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.event-poster-and-rules {
+    /* img-div */
+    display: flex;
+    padding: 10px;
+}
+
+.event-poster {
+    width: 300px;
+    height: 424px;
+}
+
+.event-rules {
+    margin-left: 10px;
+}
+
+.event-rules ol,
+.event-rules ul {
+    margin-left: 7%;
+}
+
+.mt-5px {
+    margin-top: 5px;
+}
+
+@media (max-width:1040px) {
+    #events {
+        width: 90%;
+        transition: 1s ease-in-out;
+    }
+}
+
+@media (max-width:745px) {
+    #events {
+        border-top-width: 25px;
+    }
+    .all-events-name {
+        flex-direction: column;
+    }
+    .event-name {
+        width: 100%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .event-poster-and-rules {
+        flex-direction: column;
+    }
+    #event-poster {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h4 {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+    position: absolute;
+}
+
+.highlight {
+    background-color: rgba(128, 128, 128, 0.5);
+}

@@ -1,0 +1,296 @@
+[
+  {
+        "club": "NETWEAVERS",
+        "quote": [
+          "Websites promote you 24/7: No employee will do that",
+          "-By Paul Cookson"
+        ],
+        "Para": [
+          " \"People don't care about what you say, they care about what you build.\" ",
+          "Imagine if you have the craving of debugging the error to build robust and automated Dynamic Interface but there is no right platform to direct you, that's where we introduce you with our Club Netweavers. ",
+          "We provide platform for real time hands-on MEAN stack for the web development. Our only motive is to train the members with new technology and advance skills to build the attractive interfaces, modules and websites."
+        ],
+        "mentor": [
+          {
+            "name": "Dr. Ravish Sharma",
+            "img": "./image/Profile.png"
+          },
+          {
+            "name": "Dr. Charu Puri",
+            "img": "./image/Profile.png"
+          }
+        ],
+        "members": [
+          {
+            "name": "Anwesha sanyal",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "Lakshay Rana",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "Prachi Tiwari",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "Ankit Das",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "Priyansh Singla",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "Harsh Jindal",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "Harsh Sharma",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "Anshul",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "Aniket Sharma",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "Anubhav",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          }
+        ]
+      
+    
+  },
+  {
+        "club": "CODEBOTS",
+        "quote": [
+          "“Understanding the fundamental principles of coding gives one an insight to more complex systems, how technology is layered, and how simple systems can be developed into more complex ones.”",
+          "-By Trudy Norris-Grey"
+        ],
+        "Para": [
+          "Coding is one of the most important aspect of Tech World. We at Codebots, The Coding Club of Parikalan tries our level best to create a community of fine coders who can take part in different competitions organised in and outside the campus.",
+          "The Team Codebots works to promote Competitive Coding and tries its level best to make every Computer Science student aware about the importance of Competitive Coding.",
+          "We organise various Coding Competitions that can help the students to not only enhance their Coding skills but which also help them to develop their logical thinking."
+        ],
+        "mentor": [
+          {
+            "name": "Dr. Kirti Yadav",
+            "img": "./image/Profile.png"
+          },
+          {
+            "name": "Dr. Purnima Bindal",
+            "img": "./image/Profile.png"
+          }
+        ],
+        "members": [
+          {
+            "name": "Anwesha sanyal",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          }
+        ]
+  },
+  {
+        "club": "QUIZBOTS",
+        "quote": ["Quizbots is a club which is a combination of a must needed skill \" quizzing \" and an ever growing and evolving topic \" technology \"."],
+        "Para": [
+          " \"People don't care about what you say, they care about what you build.\" ",
+          "We prepare and spread knowledge about recent and important tech facts. We are a team of tech geeks always ready to gain more and know new tech stuffs. We promote entrepreneurship and believe in solving societal problems using technology.",
+          "Technical quiz is something which increases the knowledge and it is one of the most common competition which is almost pary of every tech event. We organise events and webinars which have an ultimate aim to increase your knowledge. Join us and get a bit closer to your tech love"
+        ],
+        "mentor": [
+          {
+            "name": "Dr.  Priyanka Gupta",
+            "img": "./image/Profile.png"
+          },
+          {
+            "name": "Dr. Akshay Chamoli",
+            "img": "./image/Profile.png"
+          }
+        ],
+        "members": [
+          {
+            "name": "Anwesha sanyal",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "Lakshay Rana",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "Prachi Tiwari",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "Ankit Das",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "Priyansh Singla",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "Harsh Jindal",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "Harsh Sharma",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          }
+        ]
+  },
+  {
+        "club": "EWS",
+        "quote": [
+          "\"Tell me and I forget, teach me and I may remember, involve me and I learn.\"",
+          "-By Albert Einstien"
+        ],
+        "Para": [
+          "\"Speak clearly if you speak at all; carve every word before you let it fall.\" What's the use of having so much knowledge if you can't put it forward in a good way?",
+          "This is exactly what EWS Club of Parikalan aims at. As the name implies EWS i.e., Elocution, Workshop and Seminar Club has only one motive: to develop interpersonal and intrapersonal skills of the students. And the pandemic was not a hurdle in the way. The members organise various activities such as quiz competition, essay writing, paper presentation etc. to enhance the said skills. Previously, the club had also organised some illuminating seminars and webinars by some renowned speakers who not only engaged with students but also imparted their valuable knowledge. EWS Club gives students a chance to take part in any activity irrespective of their field of study. The club plans to increase the seminars in the upcoming semester and this time students will also get to present their sessions."
+        ],
+        "mentor": [
+          {
+            "name": "Dr. Veenu Bhasin",
+            "img": "./image/Profile.png"
+          },
+          {
+            "name": "Dr. Aparna Dutt",
+            "img": "./image/Profile.png"
+          }
+        ],
+        "members": [
+          {
+            "name": "",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          },
+          {
+            "name": "",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          }
+        ]
+  },
+  {
+        "club": "UNKNOWN",
+        "quote": [
+          "Websites promote you 24/7: No employee will do that",
+          "-By Paul Cookson"
+        ],
+        "Para": [""],
+        "mentor": [
+          {
+            "name": "Dr. ",
+            "img": "./image/Profile.png"
+          },
+          {
+            "name": "Dr. ",
+            "img": "./image/Profile.png"
+          }
+        ],
+        "members": [
+          {
+            "name": "",
+            "img": "./image/Profile.png",
+            "course": "",
+            "year": ""
+          }
+        ]
+}
+]

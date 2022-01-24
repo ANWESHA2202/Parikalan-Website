@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+body {
+    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#nav-checkbox,
+.nav-toggle {
+    display: none;
+}
+
+/* .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
+
+.hero h1 {
+    color: white;
+    /* font-size: 2.5em; */
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.hero span {
+    letter-spacing: 3px;
+    /* font-size: 0.9em; */
+    color: grey;
+    margin: 35px 0;
+}
+
+.hero img {
+    padding: 25px 18px;
+    width: 150px;
+}
+
+.container {
+    background: linear-gradient(rgb(4, 4, 22), rgb(6, 6, 41)), rgb(4, 4, 24);
+    color: white;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    padding-top: 120px;
+}
+
+.content h1 {
+    padding-bottom: 6px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.content h3 {
+    text-align: center;
+    font-size: medium;
+    padding-bottom: 50px;
+    color: rgb(238, 183, 183);
+}
+
+.content p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: whitesmoke;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    transition: background-color 0.5s ease;
+}
+
+.logo1 h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.logo1 h2 span {
+    color: crimson;
+}
+
+.nav-menu ul {
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+    background-color: white;
+    color: rgb(4, 4, 24);
+}
+
+.active {
+    background-color: rgb(4, 4, 24);
+}
+
+
+/* .active:hover{
+    color: #fff !important;
+} */
+
+.nav-menu li a > .fas,.nav-menu li a > .fab{
+    color: white;
+}
+
+.nav-menu li a:hover > .fas,.nav-menu li a:hover > .fab{
+    color: black;
+}
+
+@media only screen and (max-width: 900px) {
+    header {
+        display: block;
+        height: 60px;
+        background-color: rgb(1, 1, 24);
+    }
+    .logo1 h2 {
+        margin-left: 15px;
+        font-size: 25px;
+    }
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        margin: 0 1rem;
+        top: 25px;
+        right: 0;
+    }
+    .nav-toggle img {
+        width: 25px;
+    }
+    .close,
+    input[type='checkbox'] {
+        display: none;
+    }
+    #nav-checkbox:checked~.nav-menu {
+        background: rgb(1, 1, 24);
+        margin-top: 10px;
+        padding: 10px 0;
+        border-top: 1px solid #fff;
+    }
+    #nav-checkbox:checked~.open {
+        display: none;
+    }
+    .nav-menu li {
+        text-align: center;
+        font-size: 15px;
+        display: none;
+        margin: 30px 0;
+    }
+    #nav-checkbox:checked~ul.nav-menu li {
+        display: block;
+    }
+    #nav-checkbox:checked~label.nav-toggle .open {
+        display: none;
+    }
+    #nav-checkbox:checked~label.nav-toggle .close {
+        display: block;
+    }
+}
+
+.container3 {
+    display: flex;
+    padding: 2px 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.card_parikalan {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(3, 0, 0, 0.781);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.column {
+    float: left;
+    width: 40%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.row {
+    /* margin: 0 -5px; */
+    width: 100%;
+}
+
+/* .row:after {
+    content: "";
+    display: flex;
+    flex-wrap: wrap;
+    clear: both;
+} */
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
