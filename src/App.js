@@ -1,13 +1,13 @@
 import React from "react";
 import Club from "./MyComponents/Club";
 import Xenium from "./Xenium/Xenium";
-import Events from "./Xenium/Events";
+import Xenium_final from "./Xenium/Xenium_final";
 import Nav from "./Home/navbar";
 // import Form from "./Form/Form";
 // import "./App.css";
 import Home from "./Home/Home";
-// import {Route} from "react-router-dom";
-// import {Switch} from "react-router-dom";
+import {Route} from "react-router-dom";
+import {Switch, useLocation} from "react-router-dom";
 // import data from "./MyComponents/data.json";
 
 function App() {
@@ -15,10 +15,16 @@ function App() {
     <div>
       {/* <Nav/> */}
       {/* <Xenium />  */}
-      {/* <Events/> */}
-      <Home />  
+      <Xenium_final/>
       {/* <Club/>  */}
       {/* <Form />; */}
+      {/* <Home />   */}
+      {/* <Navbar /> */}
+          {/* <Switch location={location} key={location.key}>
+            <Route exact path="/">
+              <HomeComponent />
+            </Route>
+          </Switch>   */}
     </div>
   );
 }
