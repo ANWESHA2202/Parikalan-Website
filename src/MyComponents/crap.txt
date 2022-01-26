@@ -1121,6 +1121,47 @@ export default function Club_netweaver(props) {
 </body>
 </html>
     
+----------------------Xenuim.jsx---------------------
+import React from "react";
+import data from "../data/Xenium.json";
+import "./Xenium.css";
+
+function Xenium() {
+  return (
+    <div className="Xenium">
+      <div id="cards">
+        {data.map((post, index) => {
+          return (
+            <>
+              {Object.keys(post).forEach((key, index) => {
+                post[key].map((pos, index) => {
+                    console.log(pos);
+                    return (
+                      // <div className="glass-card" key={pos.name}>
+                      //   <h2>{pos.name}</h2>
+                      //   <div className="cards-info" key={pos.name}>{pos.glass}</div>
+                      // </div>
+                      <>
+                      <h1>chl jaaaa</h1>
+                      </>
+                    );
+                    });
+                }
+              )}
+            </>
+          );
+        })}
+        <div className="cards-button">
+          <a href="#events">
+            <button>Explore More &#8594;</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Xenium;
 
       
 

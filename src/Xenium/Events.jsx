@@ -21,7 +21,7 @@ export default function Events(props) {
             <div className="event-poster-and-rules">
                 <img className="event-poster" src="crusade.jpg" />
                 <div className="event-rules">
-                    <p>
+                    <div>
                     <h4>{props.date}<br/>{props.time}</h4>
                     <h3 className="mt-5px">Rules:</h3>
                     <ol>
@@ -37,7 +37,7 @@ export default function Events(props) {
                     <ul>
                         <li>Arpit Samadhiya - 6398921252</li>
                     </ul>
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>
