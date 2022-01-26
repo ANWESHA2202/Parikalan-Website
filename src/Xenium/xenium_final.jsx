@@ -8,7 +8,7 @@ export default function Xenium_final() {
     const location = useLocation();
     return(
     <>
-    {/* <Xenium/> */}
+    <Xenium/>
     <Switch location={location} key={location.key}>
             
         <Route path="/WebD">
