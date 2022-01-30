@@ -1,29 +1,28 @@
 @import "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap";
-* {
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
-.Xenium {
+body {
     min-height: 100vh;
-    background-image: linear-gradient(rgba(27, 28, 29, 0.63), rgba(26, 27, 26, 0.603));
-    background-size: contain;
+    background-image: linear-gradient(rgba(27, 28, 29, 0.63),rgba(26, 27, 26, 0.603));
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 }
-
 #fest {
-    display: flex;
+    display:flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .fest-header {
     display: flex;
     flex-direction: column;
 }
-
 .fest-name h1 {
     width: fit-content;
     margin: 0 auto;
@@ -36,8 +35,7 @@
     text-transform: uppercase;
     overflow: hidden;
 }
-
-.fest-name h1::before {
+.fest-name h1::before{
     content: attr(data);
     position: absolute;
     height: 100%;
@@ -45,31 +43,26 @@
     overflow: hidden;
     animation: animate 6s linear infinite;
 }
-
-@keyframes animate {
-    0%,
-    10%,
-    100% {
+@keyframes animate{
+    0%,10%,100%
+    {
         width: 0;
     }
-    70%,
-    90% {
+    70%,90%
+    {
         width: 100%;
     }
 }
-
 .fest-info {
     /* background-color: grey; */
     margin: 0 auto;
     width: 98%;
 }
-
 .fest-short-info {
     font-size: 20px;
     text-align: center;
     color: #fff;
 }
-
 .fest-description {
     width: 70%;
     margin: 10px auto;
@@ -78,14 +71,12 @@
     text-align: justify;
     color: #fff;
 }
-
 .fest-posters {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
 }
-
 .fest-image {
     width: 75%;
     max-width: 500px;
@@ -96,8 +87,6 @@
     box-shadow: 0px 0px 3px 5px grey;
     border-radius: 15px;
 }
-
-
 /* .container2{
     margin-top: 100px;
     display:flex;
@@ -112,16 +101,15 @@
     margin: 20px;
     color: rgb(187, 183, 171);
 }
-
 .glass-card {
     font-size: 18px;
     position: relative;
     width: 300px;
     height: 400px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255,255,255,0.5);
     border-radius: 15px;
     backdrop-filter: blur(5px);
-    background: radial-gradient(at 50% 50%, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.5));
+    background: radial-gradient(at 50% 50%, rgba(0,0,0,0), rgba(255,255,255,0.5));
     box-shadow: 0px 0px 2px 2px grey;
     transition: .25s ease-in;
     margin: 20px 7px;
@@ -131,29 +119,22 @@
     justify-content: center;
     cursor: default;
 }
-
 .glass-card:hover {
     transform: scale(1.03);
-    /* height: 400px; */
     box-shadow: 0px 0px 4px 4px white;
 }
-
 .glass-card h2 {
     transition: 0.5s;
     position: absolute;
 }
-
 .glass-card:hover h2 {
     transform: translateY(-140px);
     text-shadow: 2px 2px 8px #000000;
     transition: all .5s;
     color: white;
 }
-
 .cards-info {
-    z-index: 10;
     font-size: 16px;
-    color: #000000;
     font-style: italic;
     padding: 20px;
     margin-top: auto;
@@ -161,14 +142,12 @@
     visibility: hidden;
     text-align: justify;
 }
-
-.cards-button button {
+.cards-button button{
     background-color: rgba(17, 17, 17, 0.9);
     color: white;
     height: 40px;
     width: 150px;
     font-size: 16px;
-    /* font-weight: 500; */
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -176,63 +155,50 @@
     transition: .25s;
     box-shadow: 0px 0px 5px 3px rgba(17, 17, 17, 0.6);
     visibility: hidden;
-}
 
+}
 .cards-button button:hover {
     background-color: rgba(17, 17, 17, 0.8);
     transition: .25s;
     transform: scale(1.02);
     box-shadow: 0px 0px 5px 3px grey;
 }
-
-.glass-card:hover button,
-.glass-card:hover .cards-info {
+.glass-card:hover button, .glass-card:hover .cards-info {
     animation-name: card-hover;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
-
 @keyframes card-hover {
-    0% {
-        visibility: hidden;
-        opacity: 0;
-    }
-    100% {
-        visibility: visible;
-        color: white;
-        opacity: 1;
-    }
+    0%{visibility: hidden; opacity:0;}
+    100%{visibility: visible; color: white; opacity:1;}
 }
-
 .cards-button a {
     color: white;
     text-decoration: none;
 }
 
+
 #events {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255,255,255,0.5);
     display: flex;
     flex-direction: column;
     position: relative;
     width: 1000px;
     margin: 0 auto;
     outline: none;
-    border: 10px solid rgba(255, 255, 255, 0.5);
+    border: 10px solid rgba(255,255,255,0.5);
     border-radius: 10px;
     box-shadow: 0px 0px 5px 5px grey;
-    transition: 1s ease-in-out;
 }
-
 .all-events-name {
     font-size: 18px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255,255,255,0.5);
     display: flex;
     padding: 0px;
     justify-content: space-between;
 }
-
 .event-name {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255,255,255,0.1);
     padding: 10px 0;
     width: 24%;
     text-align: center;
@@ -241,61 +207,105 @@
     border-top-right-radius: 10px;
     text-shadow: 0px 0px 1px black;
 }
-
 .event-name:hover {
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgba(128, 128, 128, 0.3);
+    
 }
-
+/* Change code below this line */
+.all-events-name-mobile {
+    display: none;
+    justify-content: space-between;
+    padding: 0px 10px;
+    font-size: 20px;
+    background-color: rgba(255,255,255,0.5);
+    padding-bottom: 5px;
+}
+.all-events-name-mobile div {
+    font-weight: 700;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+}
+.all-events-name-mobile a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+}
+.all-events-name-mobile a:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+/* Change code above this line */
 .event-description {
     /* div-div */
     display: flex;
     flex-direction: column;
     line-height: 1.3em;
 }
-
 .event-short-description {
     /* h2-p */
     padding: 10px;
 }
 
 .event-short-description h2 {
+    font-size: 28px;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
+
+/* Change below */
+.wobble {
+    letter-spacing: -3px;
+    position: relative;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, rgba(0,0,0,0.2));
+    font-family: consolas;
+}
+.wobble span {
+    position: relative;
+    display: inline-block;
+    color: black;
+    text-transform: uppercase;
+    animation: wobble-animation 1.5s ease-in-out infinite;
+    animation-delay: calc(0.09s * var(--i));
+}
+@keyframes wobble-animation {
+    0% {transform: translateY(0px);}
+    20% {transform: translateY(-8px);}
+    40%, 100% {transform: translateY(0px);}
+}
+
+
 
 .event-poster-and-rules {
     /* img-div */
     display: flex;
     padding: 10px;
 }
-
 .event-poster {
-    width: 300px;
     height: 424px;
+    width: 300px;
 }
-
 .event-rules {
     margin-left: 10px;
 }
-
-.event-rules ol,
-.event-rules ul {
+.event-rules ol, .event-rules ul {
     margin-left: 7%;
 }
-
 .mt-5px {
     margin-top: 5px;
 }
-
 @media (max-width:1040px) {
     #events {
         width: 90%;
         transition: 1s ease-in-out;
     }
 }
-
+@media (min-width:745px) {
+    .all-events-name {
+        display: flex !important;
+    }
+}
 @media (max-width:745px) {
     #events {
         border-top-width: 25px;
@@ -311,7 +321,7 @@
     .event-poster-and-rules {
         flex-direction: column;
     }
-    #event-poster {
+    .event-poster {
         margin-left: auto;
         margin-right: auto;
     }
@@ -319,13 +329,18 @@
         text-align: center;
         margin-top: 10px;
     }
+    .all-events-name-mobile {
+        display: flex;
+    }
 }
-
 .hidden {
-    visibility: hidden;
+    display: none;
     position: absolute;
 }
-
 .highlight {
     background-color: rgba(128, 128, 128, 0.5);
 }
+.highlight:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+

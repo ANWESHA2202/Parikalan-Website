@@ -9,9 +9,9 @@ function Xenium() {
      events.push(dat[key])
   })
   return (
-    <div className="Xenium">
+    <div className="Xenium" >
       <div id="cards">
-     {events.map(even=>{
+     {events.map((even)=>{
        return(
          <>
            <div className="glass-card" key={even.name}>

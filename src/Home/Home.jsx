@@ -17,7 +17,7 @@ function Home() {
     }
     return (
         <div>
-            <header>
+            {/* <header>
                 <div className="logo1">
                     <h2>PAR<span>i</span>KALAN</h2>
                 </div>
@@ -25,8 +25,8 @@ function Home() {
                 <div className="navigation">
                     <input type="checkbox" id="nav-checkbox"/>
                         <label for="nav-checkbox" className="nav-toggle">
-                            {/* <img src="images/hamburger-icon-white-16.jpg" alt="open menu" className="open"/>
-                            <img src="images/hamburger-icon-white-16.jpg" alt="close menu" className="close"/> */}
+                            <img src="images/hamburger-icon-white-16.jpg" alt="open menu" className="open"/>
+                            <img src="images/hamburger-icon-white-16.jpg" alt="close menu" className="close"/>
                         </label>
 
                         <ul className="nav-menu">
@@ -37,7 +37,7 @@ function Home() {
                             <li><a href="#"><i className="fas fa-book"></i> Register</a></li>
                         </ul>
                 </div>
-            </header>
+            </header> */}
             <div className="hero"  style={bg} >
                             {/* <video autoplay muted loop id="myVideo">
                                 <source src="videos/vecteezy_abstract-plexus-geometrical-shapes-connection-and-web-concept-digital-communication-and-technology-polygonal-background-with-moving-lines-and-dots_2020497.mov" type="video/mp4">

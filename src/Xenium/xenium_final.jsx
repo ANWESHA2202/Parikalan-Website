@@ -1,23 +1,33 @@
 import React from 'react';
-import {Switch, Route,useLocation} from "react-router-dom";
+import {Switch, Route,BrowserRouter,Link} from "react-router-dom";
 import Event from './Events';
 import data from '../data/Xenium.json';
 import Xenium from './Xenium';
 
 export default function Xenium_final() {
-    const location = useLocation();
+    let dat=data;
+
+    // const event = document.
     return(
     <>
     <Xenium/>
-    <Switch location={location} key={location.key}>
-            
-        <Route path="/WebD">
-            <Event content={data.webd}/>
+    <BrowserRouter>
+    <Event content={dat.coding}/>
+    <Switch>
+        <Route exact path="/xenium/webdev">
+            <Event content={dat.webd}/>
         </Route>
-        <Route path="/">
-            <Event/>
+        <Route exact path="/xenium/coding">
+            <Event content={dat.coding}/>
         </Route>
-    </Switch>  
+        <Route exact path="/xenium/impromptu">
+            <Event content={dat.imp}/>
+        </Route>
+        <Route exact path="/xenium/gd">
+            <Event content={dat.gd}/>
+        </Route>
+        </Switch>
+    </BrowserRouter>
     </>
     )
 }
