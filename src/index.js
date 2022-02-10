@@ -4,10 +4,10 @@ import App from "./App.js";
 // import './App.css';
 import { BrowserRouter } from "react-router-dom";
 
-ReactDOM.render( 
-<BrowserRouter >
-    <App / >
-</BrowserRouter>,
+ReactDOM.render(
+    <BrowserRouter >
+        <App />
+    </BrowserRouter>,
     document.getElementById("root")
 );
 

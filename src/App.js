@@ -1,18 +1,18 @@
 import React from "react";
-import Club from "./MyComponents/Club_routing";
-import Xenium_final from "./Xenium/Xenium_final";
-import Nav from "./Home/navbar";
-import Form from "./Form/Form";
+// import Club from "./MyComponents/Club_routing";
+import Xenium from "./Xenium/Xenium";
+// import Nav from "./Home/navbar";
+// import Form from "./Form/Form";
 // import "./App.css";
-import Home from "./Home/Home";
-import { Route, Link, BrowserRouter } from "react-router-dom";
-import { Switch, useLocation } from "react-router-dom";
-import Club_routing from "./MyComponents/Club_routing";
+// import Home from "./Home/Home";
+// import { Route, Link, BrowserRouter } from "react-router-dom";
+// import { Switch, useLocation } from "react-router-dom";
+// import Club_routing from "./MyComponents/Club_routing";
 // import data from "./MyComponents/data.json";
 
 function App() {
   return (
-    <Club_routing/>
+    <Xenium />
     // <div>
     //   <BrowserRouter>
     //     <Nav />
@@ -24,7 +24,7 @@ function App() {
     //         < Form/>
     //       </Route>
     //       <Route exact path="/xenium">
-    //         <Xenium_final />
+    //         <Xenium />
     //       </Route>
     //       <Route path="/clubs">
     //         <Club />

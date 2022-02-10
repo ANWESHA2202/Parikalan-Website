@@ -1,38 +1,36 @@
-import React from "react";
-import data from "../data/Xenium.json";
-import "./Xenium.css";
+import React from 'react';
+import {Switch, Route, BrowserRouter} from "react-router-dom";
+import Event from './Xenium_Events';
+import data from '../data/Xenium.json';
+import XeniumEventCards from './Xenium_Event_Cards';
 
-function Xenium() {
-  let dat = data;
-  var events = []
-  Object.keys(dat).forEach((key,ind)=>{
-     events.push(dat[key])
-  })
-  return (
-    <div className="Xenium" >
-      <div id="cards">
-     {events.map((even)=>{
-       return(
-         <>
-           <div className="glass-card" key={even.name}>
-        <h2>{even.name}</h2>  
-          <div className="cards-info">{even.glass}</div>
-          
-        <div className="cards-button">
-          <a href="#events">
-            <button>Explore More &#8594;</button>
-          </a>
-        </div>
-      </div>
+export default function Xenium() {
+    let dat = data;
 
-         </>
-         
-       )
-     })}
-    
-      </div>
-    </div>
-  );
+    return (
+        <>
+            <XeniumEventCards />
+            <BrowserRouter>
+            {/* <Event content={dat.coding} /> */}
+                <Switch>
+                    <Route exact path="/xenium">
+                        <Event content={dat.coding} />
+                    </Route>
+                    <Route exact path="/xenium/webdev">
+                        <Event content={dat.webd} />
+                    </Route>
+                    <Route exact path="/xenium/coding">
+                        <Event content={dat.coding} />
+                    </Route>
+                    <Route exact path="/xenium/impromptu">
+                        <Event content={dat.imp} />
+                    </Route>
+                    <Route exact path="/xenium/gd">
+                        <Event content={dat.gd} />
+                    </Route>
+                </Switch>
+            </BrowserRouter>
+        </>
+    );
 }
 
-export default Xenium;

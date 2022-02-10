@@ -8,7 +8,8 @@
 }
 body {
     min-height: 100vh;
-    background-image: linear-gradient(rgba(27, 28, 29, 0.63),rgba(26, 27, 26, 0.603));
+    background-color: rgba(0,0,0,0.5);
+    /* background-image: url('../data/image/Xenium_Background.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -99,7 +100,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 20px;
-    color: rgb(187, 183, 171);
+    color: black;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
 }
 .glass-card {
     font-size: 18px;
@@ -131,7 +133,7 @@ body {
     transform: translateY(-140px);
     text-shadow: 2px 2px 8px #000000;
     transition: all .5s;
-    color: white;
+    color: rgba(0, 0, 0, 0.9);
 }
 .cards-info {
     font-size: 16px;
@@ -176,8 +178,6 @@ body {
     color: white;
     text-decoration: none;
 }
-
-
 #events {
     background-color: rgba(255,255,255,0.5);
     display: flex;
@@ -185,6 +185,7 @@ body {
     position: relative;
     width: 1000px;
     margin: 0 auto;
+    margin-bottom: 20px;
     outline: none;
     border: 10px solid rgba(255,255,255,0.5);
     border-radius: 10px;
@@ -197,21 +198,29 @@ body {
     padding: 0px;
     justify-content: space-between;
 }
-.event-name {
+.event-name-link {
     background-color: rgba(255,255,255,0.1);
-    padding: 10px 0;
+    color: black;
+    padding: 0;
     width: 24%;
     text-align: center;
     cursor: pointer;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     text-shadow: 0px 0px 1px black;
+    text-decoration: none;
 }
+.event-name {
+    padding: 10px 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 .event-name:hover {
     background-color: rgba(128, 128, 128, 0.3);
-    
 }
 /* Change code below this line */
+/* for the hamburger nav menu(currently not made)  */
 .all-events-name-mobile {
     display: none;
     justify-content: space-between;
@@ -275,8 +284,6 @@ body {
     40%, 100% {transform: translateY(0px);}
 }
 
-
-
 .event-poster-and-rules {
     /* img-div */
     display: flex;
@@ -313,8 +320,12 @@ body {
     .all-events-name {
         flex-direction: column;
     }
-    .event-name {
+    .event-name-link {
         width: 100%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .event-name {
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
     }
